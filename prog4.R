@@ -1,0 +1,9 @@
+getwd()
+setwd("C:/Program Files/RStudio/R/Dataset")
+grep(".csv",list.files(),value=T)
+user_data<-read.delim("Churn_Modelling.csv",header=TRUE,sep=',')
+user_data
+sam_data<-user_data
+vec<-c(10,20,30,40,50)
+user_data<-cbind(sam_data,new_col=vec)
+user_data
